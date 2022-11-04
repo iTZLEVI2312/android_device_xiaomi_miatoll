@@ -3,6 +3,7 @@
     package="org.lineageos.settings"
     android:versionCode="3"
     android:versionName="3.0"
+    xmlns:tools="http://schemas.android.com/tools"
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.DEVICE_POWER" />
@@ -16,6 +17,11 @@
         android:allowBackup="true"
         android:label="@string/device_settings_app_name"
         android:persistent="true">
+
+        <provider
+	    android:name="androidx.startup.InitializationProvider"
+	    android:authorities="${applicationId}.androidx-startup"
+	    tools:replace="android:authorities"/>
 
         <receiver android:name=".BootCompletedReceiver" android:exported="true">
             <intent-filter android:priority="1000">
