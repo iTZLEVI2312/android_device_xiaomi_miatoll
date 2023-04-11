@@ -112,6 +112,10 @@ ODM_MANIFEST_SKUS += \
 
 ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/nfc/manifest_nfc.xml
 
+# Libinit
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_miatoll
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_miatoll
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
