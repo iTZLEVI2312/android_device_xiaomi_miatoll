@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
+    audio.primary.default \
     audio.usb.default \
     audio.r_submix.default \
     libaudio-resampler
