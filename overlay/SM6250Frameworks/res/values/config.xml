@@ -567,4 +567,12 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
+    <!-- Smart charging --> 
+    <bool name="config_smartChargingAvailable">true</bool>
+    <integer name="config_smartChargingBatteryLevel">88</integer>
+    <integer name="config_smartChargingBatteryResumeLevel">69</integer>
+    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_smartChargingSuspendValue" translatable="false">0</string>
+    <string name="config_smartChargingResumeValue" translatable="false">1</string>
+
 </resources>
