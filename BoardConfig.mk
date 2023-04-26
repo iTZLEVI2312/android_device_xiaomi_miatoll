@@ -84,8 +84,8 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := cust_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
+TARGET_KERNEL_CONFIG := miatoll_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/miatoll
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -198,7 +198,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2022-06-05
 
 # Sepolicy
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
