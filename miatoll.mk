@@ -254,7 +254,8 @@ PRODUCT_COPY_FILES += \
 
 # Libshims
 PRODUCT_PACKAGES += \
-    fakelogprint
+    fakelogprint \
+    libwatermark_shim
 
 # Keymaster
 PRODUCT_PACKAGES += \
