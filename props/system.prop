@@ -39,6 +39,7 @@ persist.vendor.bt.soc.scram_freqs=192
 persist.bt.a2dp.aac_disable=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.bluetooth.soc=cherokee
+persist.vendor.bluetooth.modem_nv_support=true
 
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera
