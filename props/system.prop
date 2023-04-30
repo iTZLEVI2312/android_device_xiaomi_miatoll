@@ -73,6 +73,10 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 # DPM
 persist.dpm.feature=1
 
+# Deep Sleep
+pm.sleep_mode=1
+vendor.post_boot.parsed=1
+
 #GBoard
 ro.com.google.ime.kb_pad_port_b=1
 
