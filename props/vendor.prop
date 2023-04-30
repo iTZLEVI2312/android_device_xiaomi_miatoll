@@ -161,6 +161,9 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
+# GFX
+ro.config.avoid_gfx_accel=true
+
 # Keyguard
 keyguard.no_require_sim=true
 
