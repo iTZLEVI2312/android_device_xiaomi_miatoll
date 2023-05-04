@@ -32,7 +32,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/configs/bluetooth/include
 TARGET_USE_QTI_BT_STACK := true
 
 # Bootloader
@@ -60,7 +60,7 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_USES_HWC2 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/rootdir/config.fs
 
 # FM
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
@@ -104,13 +104,13 @@ BOARD_KERNEL_CMDLINE += swiotlb=1
 BOARD_KERNEL_CMDLINE += kpti=off
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 
 ODM_MANIFEST_SKUS += \
-    joyeuse
+    nfc
 
-ODM_MANIFEST_JOYEUSE_FILES := $(DEVICE_PATH)/manifest_joyeuse.xml
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/nfc/manifest_nfc.xml
 
 # Media
 TARGET_USES_ION := true
@@ -162,10 +162,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_BOARD_PLATFORM := atoll
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -180,7 +180,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/rootdir/releasetools
 
 # RenderScript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so

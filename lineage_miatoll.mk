@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from miatoll device
-$(call inherit-product, device/xiaomi/miatoll/device.mk)
+$(call inherit-product, device/xiaomi/miatoll/miatoll.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
