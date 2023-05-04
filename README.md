@@ -1,4 +1,10 @@
-Copyright (C) 2020 - The LineageOS Project
+#  Device tree for Xiaomi Redmi Note 9S/Pro Series (miatoll)
 
-Common device tree for Xiaomi SM6250 based devices
+```
 ==============
+#
+# Copyright (C) 2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
