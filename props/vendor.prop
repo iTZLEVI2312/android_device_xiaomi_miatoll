@@ -40,6 +40,7 @@ vendor.audio.hw.aac.encoder=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio.adm.buffering.ms=2
+vendor.audio.capture.enforce_legacy_copp_sr=true
 vendor.audio.volume.headset.gain.depcal=true
 persist.vendor.audio.fluence.voicecomm=true
 vendor.audio.hal.output.suspend.supported=true
